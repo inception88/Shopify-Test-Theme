@@ -310,9 +310,11 @@
       </div>
     </div>
   </div>
-      	{% for product in all_products %}
-		    {{ product }} is {{ product.title }} or {{ product.handle }}
-		{% endfor %}
+  <div>
+    {% for product in all_products %}
+		{{ product }} is {{ product.title }} or {{ product.handle }}
+	{% endfor %}
+  </div>
 </footer>
 
 {% javascript %}
