@@ -20,9 +20,9 @@
   {%- endcase -%}
 {%- endfor -%}
   <div>Testing
-    {% for product in all_products %}
+    {%- for product in all_products -%}
     	{{ product }}
-	{% endfor %}
+	{%- endfor -%}
   </div>
 {% schema %}
 {
