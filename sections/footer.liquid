@@ -310,7 +310,9 @@
       </div>
     </div>
   </div>
-      <div>Ben testing the page.liquid file</div>
+      	{% for product in all_products %}
+		    {{ product }} is {{ product.title }} or {{ product.handle }}
+		{% endfor %}
 </footer>
 
 {% javascript %}
